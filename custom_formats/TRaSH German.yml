@@ -1,0 +1,30 @@
+name: TRaSH German
+description: "Matches German language releases excluding dual/multi-language and subbed versions"
+conditions:
+- name: German
+  negate: false
+  required: true
+  type: language
+  value: 4
+- name: NOT Original
+  negate: true
+  required: true
+  type: language
+  value: -2
+- name: DL
+  negate: true
+  required: true
+  type: release_title
+  pattern: (?<!WEB[-_. ]?)\b(DL)\b
+- name: ML
+  negate: true
+  required: true
+  type: release_title
+  pattern: \b(ML)\b
+- name: Not Subbed
+  negate: true
+  required: true
+  type: release_title
+  pattern: (?=.*(German|Ger))(?=.*(Sub|Multi(ple)?Sub))
+tests: []
+includeCustomFormatWhenRenaming: true
