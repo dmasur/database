@@ -79,6 +79,11 @@ conditions:
   pattern: DRX
   required: false
   type: release_group
+- name: E
+  type: release_group
+  required: false
+  negate: false
+  pattern: E
 - name: FGT
   negate: false
   pattern: FGT
@@ -197,6 +202,11 @@ conditions:
 - name: TvR
   negate: false
   pattern: TvR
+  required: false
+  type: release_group
+- name: UnKn0wn
+  negate: false
+  pattern: UnKn0wn
   required: false
   type: release_group
 - name: VD0N

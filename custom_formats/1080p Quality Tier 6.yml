@@ -26,11 +26,21 @@ conditions:
   required: false
   source: webrip
   type: source
+- name: ASD87
+  negate: false
+  pattern: ASD87
+  required: false
+  type: release_group
 - name: BRUTE
   negate: false
   pattern: BRUTE
   required: false
   type: release_group
+- name: CHD
+  type: release_group
+  required: false
+  negate: false
+  pattern: CHD
 - name: EuReKA
   negate: false
   pattern: EuReKA
@@ -42,10 +52,10 @@ conditions:
   required: false
   type: release_group
 - name: HaB
-  type: release_group
-  required: false
   negate: false
   pattern: HaB
+  required: false
+  type: release_group
 - name: HANDJOB
   negate: false
   pattern: HANDJOB
@@ -109,6 +119,11 @@ conditions:
 - name: PTP
   negate: false
   pattern: PTP
+  required: false
+  type: release_group
+- name: PuTao
+  negate: false
+  pattern: PuTao
   required: false
   type: release_group
 - name: ROCiNANTE
